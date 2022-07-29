@@ -2,7 +2,7 @@ import Svg, { Path, Circle,G } from "react-native-svg"
 
 export const Apps = () =>{
     return(
-        <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 502 502" width={30} height={30}>
+        <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 502 502" width={35} height={35}>
         <Path
           fill="#C7EBFF"
           d="M176.062 222.224h-121.1C30.13 222.224 10 202.093 10 177.261v-121.1c0-24.832 20.13-44.963 44.963-44.963h121.1c24.832 0 44.963 20.13 44.963 44.963v121.1c-.001 24.832-20.132 44.963-44.964 44.963z"
@@ -29,7 +29,7 @@ export const Apps = () =>{
 }
 export const House = () =>{
     return(
-          <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={30} height={30}>
+          <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={35} height={35}>
             <Path fill="#E8E8E8" d="M10.199 166.175h403.95v313.931H10.199z" />
             <Path fill="#F07057" d="M343.749 31.894H82.91L10.199 166.175h403.954z" />
             <Path fill="#84B3D2" d="M156.772 318.521h110.804v161.586H156.772z" />
@@ -44,7 +44,7 @@ export const House = () =>{
 }
 export const VirusIcon = () =>{
     return(
-        <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={30} height={30}>
+        <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={35} height={35}>
     <Path
       d="m371.273 397.081-47.853-47.853c-17.048-17.048 8.734-42.882 25.807-25.807l47.853 47.854c17.05 17.047-8.736 42.878-25.807 25.806zm65.997-122.832h-67.676c-24.114 0-24.139-36.497 0-36.497h67.676c24.114-.001 24.139 36.497 0 36.497zM323.42 162.772l47.853-47.853c17.05-17.052 42.876 8.739 25.807 25.807l-47.853 47.854c-17.051 17.052-42.876-8.739-25.807-25.808z"
       fill="#FB3732"
@@ -94,7 +94,7 @@ export const VirusIcon = () =>{
 }
 export const Health = ()=>{
     return(
-  <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={30} height={30}>
+  <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={35} height={35}>
     <Path
       fill="#FFF"
       d="M475.89 476.105H36.11c-13.295 0-24.073-10.779-24.073-24.073v-304.02c0-13.295 10.779-24.074 24.073-24.074h439.78c13.295 0 24.074 10.779 24.074 24.074v304.021c-.001 13.293-10.779 24.072-24.074 24.072z"

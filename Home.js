@@ -4,7 +4,8 @@ import {FontAwesome5,Feather} from 'react-native-vector-icons'
 import {Divider} from 'react-native-elements'
 import HealthNeeds from './HealthNeeds'
 
-const HeaderTab = ()=>{
+const Home = ()=>{
+
     const bottomIcons = [
             {
                 id:1,
@@ -41,7 +42,12 @@ const HeaderTab = ()=>{
             name:"dr Adison Schieifer",
             job:"Dental Specialist"
         },
-
+        {
+            id:3,
+            src:require('./assets/belling/bruno-rodrigues-279xIHymPYY-unsplash.jpg'),
+            name:"dr Adison Schieifer",
+            job:"Dental Specialist"
+        },
     ]
 
     return(
@@ -72,13 +78,22 @@ const HeaderTab = ()=>{
            <Text style={{color:"#fff"}}>Dental Specialist</Text>
             </View>
             </View>
-           <TouchableOpacity style={{flexDirection:"row",alignItems:"center",justifyContent:"center",marginLeft:10}}>
-            <View style={{flexDirection:"row",alignItems:"center",justifyContent:"center",}}>
-            <FontAwesome5 name="calendar" size={24} color="#fff"/>
-            <Text style={{color:"#fff"}}>Today</Text>
+           <TouchableOpacity style={{
+            flexDirection:"row",
+            alignItems:"center",
+            justifyContent:"center",
+            backgroundColor:"grey",
+            width:"70%",
+            padding:5,
+            borderRadius:30,
+            marginInline: "auto"
+            }}>
+            <View style={{flexDirection:"row",alignItems:"center"}}>
+            <FontAwesome5 name="calendar" size={24} color="#fff" />
+            <Text style={{color:"#fff",marginLeft:7}}>Today</Text>
             </View>
-            <FontAwesome5 name="clock" size={17} color="#fff"/>
-            <Text style={{color:"#fff"}}>14:30 - 15:30AM</Text>
+            <FontAwesome5 name="clock" size={17} color="#fff" style={{marginLeft:7}}/>
+            <Text style={{color:"#fff",marginLeft:10}}>14:30 - 15:30AM</Text>
            </TouchableOpacity>
            <View>
            </View>
@@ -111,7 +126,7 @@ const HeaderTab = ()=>{
     )
 }
 
-export default  HeaderTab;
+export default  Home;
 
 
 const Doctor = ({doctor}) => {
