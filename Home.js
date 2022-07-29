@@ -67,7 +67,7 @@ const Home = ()=>{
                 </TouchableOpacity>
             </View>
         </View>
-        <View style={{width:"90%",height:180,backgroundColor:"indigo",marginTop:50,alignSelf:"center",borderRadius:15}}>
+        <View style={{width:"90%",height:180,backgroundColor:"indigo",marginTop:20,alignSelf:"center",borderRadius:15}}>
           <View>
             <View style={{padding:15,flexDirection:"row",alignItems:"center",}}>
               <Image 
@@ -145,6 +145,6 @@ const Doctor = ({doctor}) => {
 
 const BottomIcons = ({icon})=> (
    <TouchableOpacity style={{margin:10}}>
-    <Feather name={icon.icon} size={27} color={icon.color}/>
+    <Feather name={icon.icon} size={30} color={icon.color}/>
    </TouchableOpacity>
 )
