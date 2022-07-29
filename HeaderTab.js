@@ -1,4 +1,4 @@
-import {View, Text,Image,ScrollView} from 'react-native'
+import {View, Text,Image,ScrollView, SafeAreaView} from 'react-native'
 import { TouchableOpacity } from 'react-native'
 import {FontAwesome5,Feather} from 'react-native-vector-icons'
 import {Divider} from 'react-native-elements'
@@ -24,7 +24,7 @@ const HeaderTab = ()=>{
         {
             id:4,
             src:require('./assets/belling/luke-jones-CEFYNiM9xLk-unsplash.jpg'),
-            title:"Appointement"
+            title:"More"
         },
     ]
     const bottomIcons = [
@@ -67,9 +67,9 @@ const HeaderTab = ()=>{
     ]
 
     return(
-        <>
+        <SafeAreaView style={{flex:1}}>
         <ScrollView>
-        <View style={{marginTop:50,flexDirection:"row",alignItems: "center",justifyContent:"space-around"}}>
+        <View style={{marginTop:30,flexDirection:"row",alignItems: "center",justifyContent:"space-around"}}>
             <View>
                 <Text style={{fontSize:20,fontWeight:"600"}}>Hi, Jane</Text>
                 <Text>How are you feeling today ?</Text>
@@ -79,7 +79,7 @@ const HeaderTab = ()=>{
                 <FontAwesome5 name="search" size={22} style={{margin:10}}/>
             </View>
         </View>
-        <View style={{width:"90%",height:190,backgroundColor:"indigo",marginTop:50,alignSelf:"center",borderRadius:15}}>
+        <View style={{width:"90%",height:180,backgroundColor:"indigo",marginTop:50,alignSelf:"center",borderRadius:15}}>
           <View>
             <View style={{padding:15,flexDirection:"row",alignItems:"center",}}>
               <Image 
@@ -130,7 +130,7 @@ const HeaderTab = ()=>{
                     ))
                 }
             </View>
-            </>
+            </SafeAreaView>
     )
 }
 
@@ -139,11 +139,11 @@ export default  HeaderTab;
 
 
 const IconButton = ({icon}) =>(
-    <TouchableOpacity style={{}}>
+    <TouchableOpacity>
         <Image 
         style={{width:60, height:60, borderRadius:30}}
         source={icon.src}/>
-        <Text style={{width:60}}>{icon.title}</Text>
+        <Text style={{alignSelf:"center"}}>{icon.title}</Text>
     </TouchableOpacity>
 )
 
