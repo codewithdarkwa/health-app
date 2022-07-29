@@ -86,23 +86,23 @@ const HeaderTab = ()=>{
         </View>
         <View style={{margin:20}}>
             <Text style={{fontSize:20,fontWeight:"600"}}>Health Needs</Text>
-            <View style={{flexDirection:"row",justifyContent:"space-between",padding:5}}>
-                <View style={{flexDirection:"column",alignItems:"center"}}>
+            <View style={{flexDirection:"row",justifyContent:"space-between",}}>
+                <TouchableOpacity style={{flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
                 <Health />
                 <Text style={{alignSelf:"center"}}>Appointment</Text>
-                </View>
-                <View style={{flexDirection:"column",alignItems:"center"}}>
+                </TouchableOpacity>
+                <TouchableOpacity style={{flexDirection:"column",alignItems:"center"}}>
                 <House />
                 <Text style={{alignSelf:"center"}}>Hospital</Text>
-                </View>
-                <View style={{flexDirection:"column",alignItems:"center"}}>
+                </TouchableOpacity>
+                <TouchableOpacity style={{flexDirection:"column",alignItems:"center"}}>
                 <VirusIcon />
                 <Text style={{alignSelf:"center"}}>Covid 19</Text>
-                </View>
-                <View style={{flexDirection:"column",alignItems:"center"}}>
+                </TouchableOpacity>
+                <TouchableOpacity style={{flexDirection:"column",alignItems:"center"}}>
                 <Apps />
                 <Text style={{alignSelf:"center"}}>More</Text>
-                </View>
+                </TouchableOpacity>
             </View>
             <View style={{margin:20,right:20}}>
                 <Text style={{fontSize:20,fontWeight:"500"}}>Nearby Doctor</Text>
