@@ -32,19 +32,19 @@ const Home = ()=>{
     const doctors = [
         {
             id:1,
-            src:require('./assets/belling/pexels-anna-shvets-4167541.jpg'),
+            src:require('./assets/images/pexels-anna-shvets-4167541.jpg'),
             name:"dr Skylar Korsgaard",
             job:"General Practioner"
         },
         {
             id:2,
-            src:require('./assets/belling/luke-jones-CEFYNiM9xLk-unsplash.jpg'),
+            src:require('./assets/images/bruno-rodrigues-279xIHymPYY-unsplash.jpg'),
             name:"dr Adison Schieifer",
             job:"Dental Specialist"
         },
         {
             id:3,
-            src:require('./assets/belling/bruno-rodrigues-279xIHymPYY-unsplash.jpg'),
+            src:require('./assets/images/bruno-rodrigues-279xIHymPYY-unsplash.jpg'),
             name:"dr Adison Schieifer",
             job:"Dental Specialist"
         },
@@ -67,12 +67,20 @@ const Home = ()=>{
                 </TouchableOpacity>
             </View>
         </View>
-        <View style={{width:"90%",height:180,backgroundColor:"indigo",marginTop:20,alignSelf:"center",borderRadius:15}}>
+        <View style={{
+            width:"90%",
+            height:180,
+            backgroundColor:"indigo",
+            marginTop:20,
+            alignSelf:"center",
+            borderRadius:15,
+            margin:15
+            }}>
           <View>
             <View style={{padding:15,flexDirection:"row",alignItems:"center",}}>
               <Image 
                style={{width:60,height:60,margin:15,borderRadius:5}}
-              source={require('./assets/belling/bruno-rodrigues-279xIHymPYY-unsplash.jpg')}/>
+              source={require('./assets/images/bruno-rodrigues-279xIHymPYY-unsplash.jpg')}/>
             <View>
            <Text style={{color:"#fff", fontSize:20}}>dr. Ruben Dorwart</Text>
            <Text style={{color:"#fff"}}>Dental Specialist</Text>
@@ -86,7 +94,7 @@ const Home = ()=>{
             width:"70%",
             padding:5,
             borderRadius:30,
-            marginInline: "auto"
+            left:50
             }}>
             <View style={{flexDirection:"row",alignItems:"center"}}>
             <FontAwesome5 name="calendar" size={24} color="#fff" />
@@ -106,9 +114,7 @@ const Home = ()=>{
             <View style={{margin:20,right:20}}>
                 <Text style={{fontSize:20,fontWeight:"500"}}>Nearby Doctor</Text>
                 {
-                    doctors.map((doctor,i) =>(
-                        <Doctor  key={i} doctor={doctor}/>
-                    ))
+                    doctors.map((doctor,i) =><Doctor  key={i} doctor={doctor}/>)
                 }
             </View>
             
@@ -117,9 +123,7 @@ const Home = ()=>{
             <Divider width={0.5}/>
             <View style={{flexDirection:"row",justifyContent:"space-around"}}>
                 {
-                    bottomIcons.map((icon, i) =>(
-                        <BottomIcons key={i} icon={icon}/>
-                    ))
+                    bottomIcons.map((icon, i) => <BottomIcons key={i} icon={icon}/>)
                 }
             </View>
             </SafeAreaView>

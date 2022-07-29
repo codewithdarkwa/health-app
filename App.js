@@ -1,8 +1,13 @@
-
+import { StatusBar } from "expo-status-bar";
 import Home from "./Home";
 
 const App = () =>{
-  return <Home />
+  return (
+    <>
+  <Home />
+  <StatusBar style="dark"/>
+    </>
+  )
 }
 
 export default App;

@@ -4,7 +4,7 @@ import { Health,House,VirusIcon,Apps, } from './SvgIcons'
 export default function(){
     return(
        
-<View style={{flexDirection:"row",justifyContent:"space-between",}}>
+<View style={{flexDirection:"row",justifyContent:"space-around",}}>
     <TouchableOpacity style={{flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
         <Health />
         <Text style={{alignSelf:"center"}}>Appointment</Text>

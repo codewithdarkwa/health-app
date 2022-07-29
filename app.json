@@ -3,8 +3,10 @@
     "name": "health-app",
     "slug": "health-app",
     "version": "1.0.0",
+    "privacy":"public",
+    "description":"A health app UI",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/health.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
