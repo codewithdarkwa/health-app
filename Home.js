@@ -2,7 +2,7 @@ import {View, Text,Image,ScrollView, SafeAreaView} from 'react-native'
 import { TouchableOpacity } from 'react-native'
 import {FontAwesome5,Feather} from 'react-native-vector-icons'
 import {Divider} from 'react-native-elements'
-import {Health,House,VirusIcon,Apps} from './SvgIcon'
+import HealthNeeds from './HealthNeeds'
 
 const HeaderTab = ()=>{
     const bottomIcons = [
@@ -37,7 +37,7 @@ const HeaderTab = ()=>{
         },
         {
             id:2,
-            src:require('./assets/belling/bruno-rodrigues-279xIHymPYY-unsplash.jpg'),
+            src:require('./assets/belling/luke-jones-CEFYNiM9xLk-unsplash.jpg'),
             name:"dr Adison Schieifer",
             job:"Dental Specialist"
         },
@@ -84,26 +84,10 @@ const HeaderTab = ()=>{
            </View>
           </View>
         </View>
-        <View style={{margin:20}}>
-            <Text style={{fontSize:20,fontWeight:"600"}}>Health Needs</Text>
-            <View style={{flexDirection:"row",justifyContent:"space-between",}}>
-                <TouchableOpacity style={{flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
-                <Health />
-                <Text style={{alignSelf:"center"}}>Appointment</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={{flexDirection:"column",alignItems:"center"}}>
-                <House />
-                <Text style={{alignSelf:"center"}}>Hospital</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={{flexDirection:"column",alignItems:"center"}}>
-                <VirusIcon />
-                <Text style={{alignSelf:"center"}}>Covid 19</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={{flexDirection:"column",alignItems:"center"}}>
-                <Apps />
-                <Text style={{alignSelf:"center"}}>More</Text>
-                </TouchableOpacity>
-            </View>
+            <Text style={{fontSize:20,fontWeight:"600",margin:15}}>Health Needs</Text>
+        <View style={{margin:10}}>
+           {/* Health Needs*/}
+           <HealthNeeds />
             <View style={{margin:20,right:20}}>
                 <Text style={{fontSize:20,fontWeight:"500"}}>Nearby Doctor</Text>
                 {

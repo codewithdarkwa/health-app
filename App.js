@@ -1,8 +1,8 @@
 
-import HeaderTab from "./HeaderTab";
+import Home from "./Home";
 
 const App = () =>{
-  return <HeaderTab />
+  return <Home />
 }
 
 export default App;
