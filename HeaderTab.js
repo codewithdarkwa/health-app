@@ -75,8 +75,12 @@ const HeaderTab = ()=>{
                 <Text>How are you feeling today ?</Text>
             </View>
             <View style={{flexDirection:"row",padding:15}}>
-                <FontAwesome5 name="bell" size={22} style={{margin:10}}/>
-                <FontAwesome5 name="search" size={22} style={{margin:10}}/>
+                <TouchableOpacity>
+                <FontAwesome5 name="bell" size={22} style={{margin:5,padding:12,borderRadius:'100%',borderWidth:0.5}}/>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                <FontAwesome5 name="search" size={22} style={{margin:5,padding:12,borderRadius:'100%',borderWidth:0.5}}/>
+                </TouchableOpacity>
             </View>
         </View>
         <View style={{width:"90%",height:180,backgroundColor:"indigo",marginTop:50,alignSelf:"center",borderRadius:15}}>
