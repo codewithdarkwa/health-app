@@ -56,7 +56,7 @@ const Home = ()=>{
         <View style={{marginTop:30,flexDirection:"row",alignItems: "center",justifyContent:"space-around"}}>
             <View>
                 <Text style={{fontSize:20,fontWeight:"600"}}>Hi, Jane</Text>
-                <Text style={{color:"#eee"}}>How are you feeling today ?</Text>
+                <Text style={{color:"grey"}}>How are you feeling today ?</Text>
             </View>
             <View style={{flexDirection:"row",padding:15}}>
                 <TouchableOpacity>
@@ -141,7 +141,7 @@ const Doctor = ({doctor}) => {
             source={doctor.src}/>
             <View>
             <Text style={{ fontSize:20}}>{doctor.name}t</Text>
-            <Text style={{color:"#eee",fontSize:15}}>General Practioner</Text>
+            <Text style={{color:"grey",fontSize:15}}>General Practioner</Text>
             <Text>⭐ 4.0  (<Text style={{color:"grey"}}>191 Reviews</Text>)</Text>
             </View>
         </View>
