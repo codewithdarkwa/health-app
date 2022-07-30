@@ -142,7 +142,7 @@ const Doctor = ({doctor}) => {
             <View>
             <Text style={{ fontSize:20}}>{doctor.name}t</Text>
             <Text style={{color:"#eee",fontSize:15}}>General Practioner</Text>
-            <Text>⭐ 4.0 (191 <Text style={{color:"grey"}}>Reviews</Text>)</Text>
+            <Text>⭐ 4.0  (<Text style={{color:"grey"}}>191 Reviews</Text>)</Text>
             </View>
         </View>
     )
