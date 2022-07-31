@@ -44,7 +44,7 @@ const Home = ()=>{
         },
         {
             id:3,
-            src:require('./assets/images/bruno-rodrigues-279xIHymPYY-unsplash.jpg'),
+            src:require('./assets/images/luke-jones-CEFYNiM9xLk-unsplash.jpg'),
             name:"dr Adison Schieifer",
             job:"Dental Specialist"
         },
