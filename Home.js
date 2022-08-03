@@ -140,7 +140,7 @@ const Doctor = ({doctor}) => {
              style={{width:90, height:90, borderRadius:10,margin:10 }}
             source={doctor.src}/>
             <View style={{padding:10,justifyContent:"space-around"}}>
-            <Text style={{ fontSize:20}}>{doctor.name}t</Text>
+            <Text style={{ fontSize:20}}>{doctor.name}</Text>
             <Text style={{color:"grey",fontSize:15}}>General Practioner</Text>
             <Text>⭐ 4.0  (<Text style={{color:"grey"}}>191 Reviews</Text>)</Text>
             </View>
