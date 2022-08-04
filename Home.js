@@ -135,9 +135,9 @@ export default  Home;
 
 const Doctor = ({doctor}) => {
     return(
-        <View style={{flexDirection:"row",margin:5,justifyContent: "center"}}>
+        <View style={{flexDirection:"row",margin:5}}>
             <Image 
-             style={{width:90, height:90, borderRadius:10,margin:10 }}
+             style={{width:90, height:90, borderRadius:10, }}
             source={doctor.src}/>
             <View style={{padding:10,justifyContent:"space-around"}}>
             <Text style={{ fontSize:20}}>{doctor.name}</Text>
